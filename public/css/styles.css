@@ -1,0 +1,811 @@
+/* BASE */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* boutons */
+
+/*orange*/
+.btnOrange{
+    color: white;
+    background-color: #cb7857;
+    border: solid #cb7857 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*blanc*/
+.btnBlanc{
+    color: #cb7857;
+    background-color: white;
+    border: solid #cb7857 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*rouge*/
+.btnRouge{
+    float: right;
+    margin-right: 3%;
+    color: white;
+    background-color: #d13f05;
+    border: solid #cb7857 1px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+/*hover*/
+.btnOrange:hover{
+    color: #cb7857;
+    background-color: white;
+    text-decoration: none;
+}
+
+.btnBlanc:hover{
+    color: white;
+    background-color: #cb7857;
+    text-decoration: none;
+}
+
+.btnRouge:hover{
+    color: #d13f05;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #d13f05;
+}
+
+/* h2 */
+
+.nouv{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: normal!important;
+}
+
+
+
+
+
+/* LAYOUT */
+
+
+
+
+
+/* NAVBAR */
+
+#navbar{
+    background-color: #cb7857;
+    width: 100%;
+    height: 100px;
+}
+
+#navbar img{
+    width: 250px;
+    height: auto;
+    padding: 15px;
+}
+
+#gly1{
+    padding-top: 40px;
+}
+
+
+
+
+
+/* MENU */
+
+#menu{
+    background-color: #fff;
+    height: 894px;
+    width: 264px;
+    margin-left: -4%;
+}
+
+#menu ul a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+#m1{
+    padding-top: 80px;
+}
+
+#m1, #m2, #m3, #m4{
+    padding-bottom: 10px;
+}
+
+ul a {
+    display: block;
+    color: #000;
+    padding: 15px 15px 15px 15px;
+}
+
+ul a.active {
+    background-color: #cb7857;
+}
+
+ul a:hover:not(.active) {
+    background-color: #cb7857;
+    color: white !important;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: #ccc;
+    color: white;
+    height: 70px;
+    text-align: center;
+    padding-top: 0.1px;
+}
+
+footer h4{
+    padding-top: 30px;
+}
+
+
+
+
+
+/* VIEW */
+
+
+
+#View{
+    background-color: #ccc;
+    padding-bottom: 0px;
+}
+
+
+/* carré blanc autour tableau */
+.fondTableau{
+    font-weight: bold;
+    background-color: white;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+/* tableau */
+
+#tabClient{
+    height: 98%;
+    width: 98%;
+    margin: auto;
+}
+
+.trTableau{
+    background-color: #bbbbbb
+}
+
+.tr2Tableau{
+    background-color: #f6f6f6
+}
+
+.aTabl, .aTabl:hover{
+    color: black;
+}
+
+/* input */
+.inputSearch{
+    height: 100%;
+    width: 100%;
+}
+
+.reset{
+    color: #000;
+    text-decoration: none;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.reset:hover{
+    color: #000!important;
+    text-decoration: none;
+}
+
+/* pagination select */
+.selectPagination{
+    padding: 10px 15px 10px 15px;
+    font-weight: normal;
+}
+
+.labelPagination{
+    font-weight: normal;
+}
+
+/* pagination page */
+.paginationCSS{
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+
+.pagination>li>a{
+    color: #000;
+    font-weight: normal;
+    margin-left : 8px;
+    margin-top: 10%;
+}
+
+.pagination>li:last-child>a, .pagination>li:first-child>a{
+    background-color: #e8e8e8; 
+    color:#fff;
+}
+
+.pagination>.active>a{
+    background-color: #b7b7b7;
+    border : 1px solid #b7b7b7;
+}
+
+.pagination>li>a:hover{
+    background-color: #cb7857!important;
+    border : 1px solid #cb7857!important;
+    font-weight: normal;
+}
+
+/* boutons */
+.tableauBouton{
+    padding-top: 35px;
+    padding-bottom: 43.5px;
+    display: flex;
+    justify-content: right; 
+}
+
+
+
+/* INSERT CUSTOMER - HOST */
+
+#insert{
+    background-color: #ccc;
+    padding-bottom: 0px;
+}
+
+/* lien */
+.listContact{
+    text-align: center;
+    display: flex;
+    margin: 0%;
+ }
+ 
+.infoGenerale{
+    font-weight: bold;
+    background-color: white;
+    padding-top: 18px;    
+    width: 28%;
+    height: 50%;
+} 
+
+.infoGenerale:hover{
+    color: white;
+    background-color: #cb7857;
+    text-decoration: none;
+}
+
+.contactLien{
+    color: #8a8a8a;
+    background-color: #f1f1f1;
+    padding-top: 18px;    
+    width: 19%;
+    height: 50%;
+}
+
+.contactLien:hover{
+    color: white;
+    background-color: #cb7857;
+    text-decoration: none;
+}
+
+/* carré blanc */
+.add{
+    background-color: white;
+    width: 100%;
+    height: 727px;
+}
+
+/* erreur */
+.error{
+    text-align: left;
+    color: red;
+    font-style: italic;
+    padding-left: 4.5%;
+    padding-top: 15px;
+}
+
+/* label */
+
+.lab{
+    padding-top: 2%;
+    padding-left: 4.5%;
+}
+
+.lab2{
+    padding-left: 4.5%;
+    padding-top: 5%;
+    vertical-align: top;
+}
+
+/* input */
+
+.input0{
+    margin-top: 4%;
+    margin-left: 15%;
+    padding: 7px;
+    padding-right: 125px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.input1{
+    margin-bottom: 1%;
+    margin-left: 10.5%;
+    padding: 7px;
+    padding-right: 82px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.textarea{
+    margin-top: 3%;
+    margin-left: 7%;
+    padding: 7px;
+    padding-right: 142px;
+    padding-bottom: 100px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+/* place boutons */
+
+.btnPlace{
+    display: flex;
+    justify-content: right;
+    margin-top: 20%;
+}
+
+.btnPlace1{
+    display: flex;
+    justify-content: right;
+}
+
+
+
+/* UPDATE CUSTOMER - HOST */
+
+#update{
+    background-color: #ccc;
+    padding-bottom: 0px;
+}
+
+.textarea2{
+    margin-top: 3%;
+    margin-left: 7%;
+    padding: 7px;
+    padding-right: 142px;
+    padding-bottom: 60px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.contactLien2{
+    color: #8a8a8a;
+    background-color: #f1f1f1;
+    padding-top: 18px;    
+    width: 23%;
+    height: 50%;
+}
+
+.contactLien2:hover{
+    color: white;
+    background-color: #cb7857;
+    text-decoration: none;
+}
+
+
+
+
+
+/* INSERT PROJECT */
+
+/* lien environnement */
+
+.contactLien1{
+    color: #8a8a8a;
+    background-color: #f1f1f1;
+    padding-top: 18px;    
+    width: 28%;
+    height: 50%;
+}
+
+.contactLien1:hover{
+    color: white;
+    background-color: #cb7857;
+    text-decoration: none;
+}
+
+/* fond blanc */
+.add2{
+    background-color: white;
+    width: 100%;
+    height: 1210px; 
+}
+
+/* input */
+.nom, .code, .customer, .host, .serveur, .notes, .dossiers, .maquettes, .email, .role, .telephone{
+    position: relative;
+}
+
+.input2{
+    margin-left: 15.4%;
+    padding: 7px;
+    padding-right: 83px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.input3{
+    margin-bottom: 1%;
+    margin-left: 14.9%;
+    padding: 7px;
+    padding-right: 39px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.input4{
+    margin-bottom: 1%;
+    margin-left: 10.2%;
+    padding: 7px;
+    padding-right: 83px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.input5{
+    margin-bottom: 1%;
+    margin-left: 10.6%;
+    padding: 7px;
+    padding-right: 82px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+/* select */
+
+.select0{
+    margin-bottom: 1%;
+    margin-left: 14%;
+    padding: 7px;
+    padding-right: 77.1px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.select1{
+    margin-bottom: 1%;
+    margin-left: 13.2%;
+    padding: 7px;
+    padding-right: 68px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+/* checkbox */
+
+.labCheck{
+    font-weight: normal;
+    margin-left: 38.1%!important;
+}
+
+/* textarea */
+
+.textarea1{
+    margin-top: 3%;
+    margin-left: 7%;
+    padding: 7px;
+    padding-right: 100px;
+    padding-bottom: 60px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+
+
+
+/* CONTACT */
+
+/* fond blanc */
+
+.addContact{
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+}
+
+/* liens */
+ 
+.infoGenerale2{
+    color: #8a8a8a;
+    background-color: #f1f1f1;
+    padding-top: 18px;    
+    width: 28%;
+    height: 50%;
+} 
+
+.infoGenerale2:hover{
+    color: white;
+    background-color: #cb7857;
+    text-decoration: none;
+}
+
+.contactLien3{
+    font-weight: bold;
+    background-color: white;
+    color: #000;
+    padding-top: 18px;    
+    width: 19%;
+    height: 50%;
+}
+
+.contactLien3:hover{
+    color: white;
+    background-color: #cb7857;
+    text-decoration: none;
+}
+
+/* affichage contact */
+
+.contactAffichage{
+    margin-top: 30px;
+    padding-left: 2.3%;
+    padding-bottom: 2.3%;
+    border: 2px solid #cb7857;
+    column-count: 2;
+}
+
+/* inputs et label */
+
+.contactAffichage input{
+    width: 50%;
+    height: 50%;
+    padding: 7px;
+    padding-right: 90px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.contactAffichage label{
+    margin: none;
+    padding: 0 !important;
+}
+
+.contactAffichage .form-right .group-form{
+    margin: 15px 0;
+    padding: 18px 0;
+}
+
+.contactAffichage .form-right input:nth-child(3n){
+    position: relative;
+    left: 30px;
+}
+
+ /* group - inputs */
+
+.group-form{
+    margin-top: 30px;
+}
+
+.group-form .email{
+    margin-left: 5px;
+}
+
+.group-form .role{
+    margin-top: 78px;
+}
+
+.group-form .telephone{
+    margin-top: -10.5px;
+}
+
+.inputRole{
+    margin-left: 56.5px;
+}
+
+.inputTel{
+    margin-left: 15px;
+}
+
+/* nom contact */
+
+.nomContact{
+    color: #cb7857;
+    font-weight: bold;
+}
+
+/* label */
+
+.labContact{
+    padding-top: 2%;
+}
+
+/* input */
+
+.inputContact0{
+    margin-top: 4%;
+    margin-left: 3%;
+    padding: 7px;
+    padding-right: 90px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.inputContact1{
+    margin-top: 4%;
+    margin-left: 3.7%;
+    padding: 7px;
+    padding-right: 90px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+/*insert contact */
+.contactEmail{
+    margin-left: 3.5%;
+}
+
+.selectContact{
+    padding: 7px;
+    margin-left: 8px;
+    margin-top: 2.3%;
+    padding-right: 52px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.roleContact{
+    margin-left: 1.7%;
+}
+
+.telContact{
+    margin-left: 2.2%;
+}
+
+.errorContact{
+    text-align: left;
+    color: red;
+    font-style: italic;
+    padding-top: 15px;
+}
+
+
+
+
+/* ENVIRONNEMENT */
+
+/* boutons */
+.contactLien4{
+    font-weight: bold;
+    background-color: white;
+    color: #000;
+    padding-top: 18px;    
+    width: 27%;
+    height: 50%;
+}
+
+.contactLien4:hover{
+    color: white;
+    background-color: #cb7857;
+    text-decoration: none;
+}
+
+/* carré */
+
+.envAffichage{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 100px;
+    padding: 10px;
+    border: 2px solid #cb7857;
+    column-count: 2;
+}
+
+/* erreur */
+
+.erreurEnv{
+    text-align: left;
+    color: red;
+    font-style: italic;
+    padding-top: 15px;
+    padding-left: 2.3%;
+}
+
+/* carré */
+
+.labEnv{
+    padding-left: 2.3%;
+}
+
+/* inputs */
+
+.inputEnv0{
+    padding: 7px;
+    padding-right: 70px;
+    margin-left: 2.4%;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.inputEnv1{
+    padding: 7px;
+    padding-right: 70px;
+    margin-left: 0.5%;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.inputEnv2{
+    padding: 7px;
+    padding-right: 70px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.selectEnv{
+    margin-left: 14.5%;
+    margin-bottom: 8%;
+    padding: 7px;
+    padding-right: 85px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;
+}
+
+.inputEnv4{
+    margin-bottom: 4%;
+    margin-right: 2%;
+    padding: 2px;
+    padding-right: 10px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;   
+}
+
+.inputEnv5{
+    padding: 7px;
+    padding-right: 70px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;   
+}
+
+.inputEnv6{
+    margin-left: 0.3%;
+    padding: 7px;
+    padding-right: 70px;
+    border-radius: #ccc 5px;
+    border: 2px solid #ededed;   
+}
+
+
+
+
+
+/* INDEX */
+
+#sec1{
+    background-color: #ccc;
+    padding-bottom: 0px;
+}

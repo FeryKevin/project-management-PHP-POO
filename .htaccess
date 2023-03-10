@@ -1,0 +1,53 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+#--------------------------------------------------
+# Répertoire : Index
+#--------------------------------------------------
+
+RewriteRule index index.php [L,NC]
+
+#--------------------------------------------------
+# Répertoire : /Customer/
+#--------------------------------------------------
+
+RewriteRule ^Customer/all   Customer/View.php [L,NC]
+RewriteRule ^Customer/new Customer/Insert.php [L,NC]
+
+RewriteRule ^Customer/([0-9]+)  Customer/Update.php?id=$1 [L,NC]
+
+#--------------------------------------------------
+# Répertoire : /Host/
+#--------------------------------------------------
+
+RewriteRule ^Host/all   Host/View.php [L,NC]
+RewriteRule ^Host/new Host/Insert.php [L,NC]
+
+RewriteRule ^Host/([0-9]+)  Host/Update.php?id=$1 [L,NC]
+
+#--------------------------------------------------
+# Répertoire : /Project/
+#--------------------------------------------------
+
+RewriteRule ^Project/all   Project/View.php [L,NC]
+RewriteRule ^Project/new Project/Insert.php [L,NC]
+
+RewriteRule ^Project/([0-9]+)  Project/Update.php?id=$1 [L,NC]
+
+#--------------------------------------------------
+# Répertoire : /Contact/
+#--------------------------------------------------
+
+RewriteRule ^Contact/all   Contact/View.php [L,NC]
+RewriteRule ^Contact/([A-Z]+)-([0-9]+)-new Contact/Insert.php?id=$2&type=$1 [L,NC]
+
+RewriteRule ^Contact/([A-Z]+)-([0-9]+)-([0-9]+) Contact/Update.php?id=$2&type=$1&page=$3 [L,NC]
+
+#--------------------------------------------------
+# Répertoire : /Environment/
+#--------------------------------------------------
+
+RewriteRule ^Environment/all   Environment/View.php [L,NC]
+RewriteRule ^Environment/([A-Z]+)-([0-9]+)-new Environment/Insert.php?id=$2&type=$1 [L,NC]
+
+RewriteRule ^Environment/([A-Z]+)-([0-9]+)-([0-9]+) Environment/Update.php?id=$2&type=$1&page=$3 [L,NC]
